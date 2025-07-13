@@ -1,0 +1,21 @@
+base_url = "https://waldenperry.com"
+title = "Walden Perry"
+description = "It's my blog."
+author = "Walden Perry"
+
+compile_sass = false
+generate_feeds = true
+feed_filenames = ["atom.xml","rss.xml"]
+
+[markdown]
+
+highlight_code = true
+highlight_theme = "gruvbox-light"
+
+[extra]
+
+header_links = [
+    {url = "$BASE_URL/about", name = "About"},
+    {url = "$BASE_URL/posts", name = "Posts"},
+    {url = "https://waldens.world", name = "Walden's World"},
+]

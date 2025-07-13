@@ -1,0 +1,47 @@
+name: Zola Build & Deploy
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup Zola
+      uses: taiki-e/install-action@v2
+      with:
+        tool: zola@0.20.0
+
+    - name: Build site
+      run: zola build
+
+    - name: Deploy to server
+      if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+      env:
+        DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+        DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+        DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+      run: |
+        sudo apt-get update && sudo apt-get install -y rsync
+        
+        mkdir -p ~/.ssh
+        echo "$DEPLOY_KEY" > ~/.ssh/deploy_key
+        chmod 600 ~/.ssh/deploy_key
+        
+        ssh-keyscan -H "$DEPLOY_HOST" >> ~/.ssh/known_hosts
+        
+        # Deploy files using rsync, deleting unused files on the server
+        rsync -avz --delete \
+          -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no" \
+          public/ \
+          "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH"
+        
+        rm -rf ~/.ssh
