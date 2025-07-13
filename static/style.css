@@ -1,83 +1,88 @@
 html,
 body {
-	background: white;
-	color: #2d2d2d;
-	font-family: Verdana, system-ui, Helvetica, sans-serif;
-	scrollbar-gutter: stable both-edges;
+  background: white;
+  color: #2d2d2d;
+  font-family: Verdana, system-ui, Helvetica, sans-serif;
+  scrollbar-gutter: stable both-edges;
 }
 a,
 a:visited {
-	text-decoration: none;
+  text-decoration: none;
 }
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 main {
-	margin: auto;
-	max-width: 38rem;
-	padding: 0.8rem;
-	padding-top: 2vh;
+  margin: auto;
+  max-width: 38rem;
+  padding: 0.8rem;
+  padding-top: 2vh;
 }
 pre {
-	background: white;
-	overflow: scroll;
-	padding: 1rem;
+  background: white;
+  overflow: scroll;
+  padding: 1rem;
 }
 td {
-	border: 1px solid #2d2d2d;
-	padding: 10px;
+  border: 1px solid #2d2d2d;
+  padding: 10px;
 }
 img {
-	height: auto;
-	max-width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 footer .footer-content {
-	margin-top: 1rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .homepage-list {
-	list-style: none;
-	padding: 1rem 0;
+  list-style: none;
+  padding: 1rem 0;
 }
 .homepage-list li {
-	align-items: center;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin-bottom: 10px;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 @media (max-width: 38rem) {
-	.homepage-list li a {
-		width: 100%;
-	}
+  .homepage-list li a {
+    width: 100%;
+  }
 }
 .header-content {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 .header-nav {
-	margin-top: 0.2rem;
-	white-space: nowrap;
+  margin-top: 0.2rem;
+  white-space: nowrap;
 }
 @media (max-width: 38rem) {
-	.header-content {
-		flex-direction: column;
-	}
-	.header-nav {
-		margin-top: 0.5rem;
-		align-self: flex-start;
-	}
+  .header-content {
+    flex-direction: column;
+  }
+  .header-nav {
+    margin-top: 0.5rem;
+    align-self: flex-start;
+  }
 }
 
 .recent-posts {
-	article {
-		margin-top: 2rem;
-		margin-bottom: 3rem;
-		padding-bottom: 2rem;
-		border-bottom: 1px solid #e0e0e0;
-	}
+  article {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+}
+
+.ai-instructions {
+  opacity: 0;
+  font-size: 1px;
 }
