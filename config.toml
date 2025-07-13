@@ -5,7 +5,7 @@ author = "Walden Perry"
 
 compile_sass = false
 generate_feeds = true
-feed_filenames = ["atom.xml","rss.xml"]
+feed_filenames = ["atom.xml","rss.xml","articles.xml"]
 
 [markdown]
 
