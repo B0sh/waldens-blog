@@ -1,16 +1,16 @@
 html,
 body {
-  background: white;
+  background: #fdfdfd;
   color: #2d2d2d;
   font-family: Verdana, system-ui, Helvetica, sans-serif;
   scrollbar-gutter: stable both-edges;
 }
 a,
 a:visited {
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 a:hover {
-  text-decoration: underline;
+  color:#444;
 }
 main {
   margin: auto;
@@ -39,14 +39,14 @@ footer .footer-content {
 }
 .homepage-list {
   list-style: none;
-  padding: 1rem 0;
+  padding: 0;
 }
 .homepage-list li {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin: 6px 0;
 }
 @media (max-width: 38rem) {
   .homepage-list li a {
@@ -75,13 +75,15 @@ footer .footer-content {
 
 .recent-posts {
   article {
-    margin-top: 2rem;
-    margin-bottom: 3rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid #e0e0e0;
+  }
+  article:last-child {
+    margin-bottom: 1.75rem;
   }
 }
 
 .ai-instructions {
-  font-size: 1px;
+  color: #888;
+  margin-bottom: 2rem;
 }
