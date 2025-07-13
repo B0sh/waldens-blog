@@ -1,0 +1,10 @@
+{% extends "index.html" %}
+
+{% block content %}
+<ul class="homepage-list">
+{% set blog_section = get_section(path="_index.md") %}
+{% for post in blog_section.pages %}
+    {{ macros::post_in_list(post=post) }}
+{% endfor %}
+</ul>
+{% endblock content %}

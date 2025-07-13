@@ -1,0 +1,29 @@
+{% macro post_in_list(post) %}
+<li>
+  <a href="{{ post.permalink | safe }}">{{ post.title }}</a>
+  <time style="font-size:90%;" datetime="{{ post.date | date(format="%+") }}">{{ post.date | date(format="%B %d, %Y") }}</time>
+</li>
+{% endmacro post_in_list %}
+
+{% macro recent_post_full(post) %}
+<article>
+  <h2>
+    <a href="{{ post.permalink | safe }}">{{ post.title }}</a>
+    {% if post.extra.link %}
+      <a href="{{ post.extra.link | safe }}" target="_blank" rel="noopener noreferrer">→</a>
+    {% endif %}
+  </h2>
+
+  {% if post.date %}
+    <p style="font-size:90%;">Posted on <time datetime="{{ post.date | date(format="%+") }}">{{ post.date | date(format="%B %d, %Y") }}</time></p>
+  {% endif %}
+
+  {% if post.extra.summary %}
+    {{ post.extra.summary | safe }}
+    <a href="{{ post.permalink | safe }}">Read more →</a>
+  {% else %}
+    {{ post.content | safe }}
+  {% endif %}
+</article>
+{% endmacro recent_post_full %}
+
