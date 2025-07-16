@@ -1,6 +1,6 @@
 base_url = "https://waldenperry.com"
 title = "Walden Perry"
-description = "It's my blog."
+description = "Thoughts on Walden"
 author = "Walden Perry"
 
 compile_sass = false

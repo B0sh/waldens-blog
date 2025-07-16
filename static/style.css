@@ -4,6 +4,12 @@ body {
   color: #2d2d2d;
   font-family: Verdana, system-ui, Helvetica, sans-serif;
   scrollbar-gutter: stable both-edges;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+code {
+  font: monospace;
+  font-size: 1rem;
 }
 a,
 a:visited {
@@ -27,9 +33,19 @@ td {
   border: 1px solid #2d2d2d;
   padding: 10px;
 }
+video,
 img {
   height: auto;
   max-width: 100%;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 38rem) {
+  img {
+    max-width: 100%;
+  }
 }
 footer .footer-content {
   margin-top: 1rem;
