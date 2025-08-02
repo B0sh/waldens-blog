@@ -5,7 +5,7 @@ body {
   font-family: Verdana, system-ui, Helvetica, sans-serif;
   scrollbar-gutter: stable both-edges;
   line-height: 1.5;
-  font-size: 1rem;
+  font-size: 85%
 }
 code {
   font: monospace;
@@ -17,6 +17,9 @@ a:visited {
 }
 a:hover {
   color:#444;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
 }
 main {
   margin: auto;
@@ -56,13 +59,25 @@ footer .footer-content {
 .homepage-list {
   list-style: none;
   padding: 0;
-}
-.homepage-list li {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 6px 0;
+
+  li {
+    align-items: center;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+    margin: 6px 0;
+  }
+
+  a {
+    margin-right: 0.3rem;
+  }
+
+  time {
+    margin-left: 0.3rem;
+    white-space: nowrap;
+
+
+  }
 }
 @media (max-width: 38rem) {
   .homepage-list li a {
