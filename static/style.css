@@ -5,7 +5,7 @@ body {
   font-family: Verdana, system-ui, Helvetica, sans-serif;
   scrollbar-gutter: stable both-edges;
   line-height: 1.5;
-  font-size: 85%
+  font-size: 15px;
 }
 code {
   font: monospace;
@@ -50,6 +50,12 @@ img {
     max-width: 100%;
   }
 }
+
+blockquote {
+  padding-left: 1rem;
+  margin: 0 auto;
+  border-left: 0.75rem solid #e0e0e0;
+}
 footer .footer-content {
   margin-top: 1rem;
   display: flex;
@@ -62,9 +68,6 @@ footer .footer-content {
 
   li {
     align-items: center;
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; */
     margin: 6px 0;
   }
 
@@ -75,8 +78,6 @@ footer .footer-content {
   time {
     margin-left: 0.3rem;
     white-space: nowrap;
-
-
   }
 }
 @media (max-width: 38rem) {
