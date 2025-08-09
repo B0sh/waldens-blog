@@ -1,0 +1,33 @@
+<form onsubmit="htmlsubmit()">
+    <textarea rows="2" cols="20"></textarea>
+</form>
+
+<textarea rows="2" cols="20" id="input-textarea"></textarea>
+
+    <div id="results"></div>
+
+    <style>
+        textarea,
+        html {
+            font-size: 1.25rem;
+            margin: 10px;
+        }
+    </style>
+
+    <Script>
+        const textarea = document.getElementById("input-textarea");
+
+textarea.addEventListener("keydown", function (e) {
+    console.log(e.isComposing, e, e.keyCode)
+    // Check for IME input
+    const isComposing = e.isComposing || e.keyCode === 229;
+    // Shift + Enter should trigger a new line
+    if (e.key === "Enter" && !e.shiftKey && !isComposing) {
+        e.preventDefault(); // prevent newline
+        submit();
+    }
+});
+function submit() {
+    document.querySelector('#results').innerHTML += textarea.value + "<br />";
+}
+    </Script>
