@@ -7,4 +7,4 @@ If you're working with a tooltip on mouseover, it's quite difficult to use the d
 
 In Chrome DevTools, navigate to the **Sources** tab, and look at the **right side panel**. Expand **Event Listener Breakpoints** > **Keyboard** > activate the **keydown** event.
 
-I think about this like having to *freeze* the page at will with a keypress. So for tooltips, I'll first hover my mouse over the tooltip I want to debug, then press a key to trigger the breakpoint. You can then go to the HTML inspector and examine the layout & CSS at that moment. I've used this for debugging all kinds of things like mid-drag layout issues with a Kanban style card component. It's great for any temporary UI involving mouse events.
+I think about this like having the ability to *freeze* the page at will with a keypress. So for tooltips, I'll first hover my mouse over the tooltip I want to debug, then press a key to trigger the breakpoint. You can then go to the HTML inspector and examine the layout & CSS at that moment. I've used this for debugging all kinds of things like mid-drag layout issues with a Kanban style card component. It's great for any temporary UI involving mouse events.
