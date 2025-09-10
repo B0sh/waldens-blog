@@ -6,7 +6,7 @@ date = 2025-09-09
 I was having issues with my Docker compose project not picking up environment variables, with the following error: 
 
 ```
-b0sh@MacBook-Air-4 tpkrpg % sudo docker compose up
+b0sh@MacBook-Air-4 % sudo docker compose up
 WARN[0000] The "LOG_DIRECTORY" variable is not set. Defaulting to a blank string. 
 invalid spec: :/log: empty section between colons
 ```
