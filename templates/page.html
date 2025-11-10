@@ -14,16 +14,16 @@
 
 {% block content %}
 <article>
-  <h1>
+  <h2>
     {% if page.extra.link %}
       <a href="{{ page.extra.link }}" target="_blank" rel="noopener noreferrer">{{ page.title }} →</a>
     {% else %}
       {{ page.title }}
     {% endif %}
-  </h1>
+  </h2>
 
   {% if page.date %}
-    <p style="font-size:90%;">Posted on <time datetime="{{ page.date | date(format="%+") }}">{{ page.date | date(format="%B %d, %Y") }}</time></p>
+    <time datetime="{{ page.date | date(format="%+") }}">{{ page.date | date(format="%B %d, %Y") }}</time>
   {% endif %}
 
   {{ page.content | safe }}
