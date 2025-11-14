@@ -82,7 +82,7 @@ By the way, for both scripts so far I used the [llm](https://github.com/simonw/l
 My explanation of the buffer idea was insufficient, so I ended up ripping that part out and putting my own algorithm in. Somewhat poetically, this cut the message count to send to the LLM to around 50,000 as well, which is around the same message count as all of my Discord logs. However, the density of questions was extremely high as all of the messages had me involved this time. I had over 8,000 questions pulled from this part.
 
 
-### 3. Youtube comments
+### 3. YouTube comments
 
 This prompt worked one shot:
 
