@@ -7,7 +7,7 @@ My latest Walden's World project is the [Ask A Question](https://waldens.world/q
 
 [![Walden's World Questions page](questions-page.png)](questions-page.png)
 
-I wanted to make the questions page for a while, but it always felt a little sad that I'd be launching it with nothing there. Then I had an idea to go through my public chat history and pull in questions from the past.
+I wanted to make the questions page for a while, but it always felt a little sad that I'd be launching it with nothing there. I suddenly wanted to make the page though when I had an idea to go through my public chat history and pull in questions from my past.
 
 Here are my sources:
 
