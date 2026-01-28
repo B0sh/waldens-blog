@@ -1,6 +1,6 @@
 +++
 title = "TIL: Typescript Path Aliases"
-date = 2026-11-27
+date = 2026-01-27
 
 [extra]
 link = "https://www.typescriptlang.org/tsconfig/#paths"
