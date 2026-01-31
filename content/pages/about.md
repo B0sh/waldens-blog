@@ -11,12 +11,14 @@ On this website, I'm trying to be a bit more professional than I usually am on t
 
 A lot of it involves programming, but much of it doesn't!
 
-* I'm fluent in Japanese and made some videos documenting my journey of learning.
-* While getting a degree in music during my college years, I posted a lot of my compositions.
-* I have a YouTube channel with my friends playing Minecraft, where sometimes I develop Java mods for videos.
+* I'm fluent in Japanese and made some [videos](https://www.youtube.com/watch?v=YAwZDmJgilY) documenting my language journey.
+* While getting a degree in music, I uploaded a lot of my [compositions](https://waldens.world/music).
+* I have a [YouTube channel](https://waldens.world/minecraft) with my friends playing Minecraft, where sometimes I develop Java mods for videos.
 
 It's my life on the net, so just go exploring for a while, if you're interested.
 
 #### Contact
 
-I encourage you to visit the [Friendship Request Form](https://waldens.world/friendship). Or my email is walden @ this website.
+I encourage you to visit the [Friendship Request Form](https://waldens.world/friendship) or [ask me a question](https://waldens.world/questions).
+
+My email is walden @ this website.
