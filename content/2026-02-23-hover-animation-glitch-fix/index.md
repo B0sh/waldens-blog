@@ -5,7 +5,7 @@ date = 2026-02-23
 
 Animation issues are quite tricky to give a name to...
 
-Just take a look at this video of my website:
+Just take a look at this video of my [website](https://waldens.world/):
 
 {{ video(src="https://static.waldenperry.com/2026/waldens-world-index-issue.mp4") }}
 
@@ -49,5 +49,7 @@ Here's a simplified version of the CSS I used. I had to manually adjust the padd
     <div class="text">Videos</div>
 </a>
 ```
+
+[Try it out!](https://waldens.world/)
 
 As an aside, trying to have LLMs do this visual fix was totally worthless! I tried GPT 5.2 Codex and Claude Opus 4.5. Neither one could do it.
