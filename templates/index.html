@@ -47,9 +47,8 @@
       {% block header %}
       <header role="banner">
         <div class="header-content">
-          <h3 style="margin-top:0;">
+          <h3 class="header-title" style="margin-top:0;">
             <a href="{{ config.base_url | safe }}" title="Home">{{ config.title }}</a>
-            <br /><small>{{ config.description }}</small>
           </h3>
           {% if config.extra.header_links %}
           <nav class="header-nav" role="navigation">
@@ -61,6 +60,9 @@
             {% endfor %}
           </nav>
           {% endif %}
+          <div class="header-description">
+            <small>{{ config.description }}</small>
+          </div>
         </div>
       </header>
       <hr />
