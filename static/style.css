@@ -1,22 +1,33 @@
 html,
 body {
-  background: #fdfdfd;
-  color: #2d2d2d;
-  font-family: Verdana, system-ui, Helvetica, sans-serif;
+  background: #fbfbfb;
+  color: #222;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", system-ui, Helvetica, sans-serif;
   scrollbar-gutter: stable both-edges;
   line-height: 1.5;
   font-size: 15px;
 }
+:root {
+  --accent-color: #086aee;
+  --text-muted: rgba(0, 0, 0, 0.55);
+  --border-color: rgba(0, 0, 0, 0.12);
+  --code-bg: #f2f2f2;
+  --blockquote-border: rgba(0, 0, 0, 0.18);
+}
 code {
-  font: monospace;
+  font-family: "SF Mono", Menlo, Courier, monospace;
   font-size: 1rem;
+  background: var(--code-bg);
+  padding: 1px 2px;
+  border-radius: 2px;
 }
 a,
 a:visited {
   /* text-decoration: none; */
+  color: var(--accent-color);
 }
 a:hover {
-  color:#444;
+  color: #1a4fb8;
 }
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
@@ -28,7 +39,7 @@ main {
   padding-top: 2vh;
 }
 pre {
-  background: white;
+  background: var(--code-bg);
   overflow: scroll;
   padding: 1rem;
 }
@@ -41,18 +52,18 @@ table {
 }
 
 th, td {
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   padding: 8px 12px;
   text-align: left;
 }
 
 th {
-  background-color: #f8f8f8;
+  background-color: #f4f4f4;
   font-weight: bold;
 }
 
 tr:nth-child(even) {
-  background-color: #fafafa;
+  background-color: #f7f7f7;
 }
 
 video,
@@ -73,7 +84,7 @@ img {
 blockquote {
   padding-left: 1rem;
   margin: 0 auto;
-  border-left: 0.75rem solid #e0e0e0;
+  border-left: 0.75rem solid var(--blockquote-border);
 }
 footer .footer-content {
   margin-top: 4rem;
@@ -135,16 +146,16 @@ footer .footer-content {
 }
 
 .ai-instructions {
-  color: #888;
+  color: var(--text-muted);
   margin-bottom: 2rem;
 }
 
 .footnote-definition {
   margin-top: 2rem;
   padding-top: 1rem;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid var(--border-color);
   font-size: 0.9rem;
-  color: #666;
+  color: var(--text-muted);
   display: flex;
   align-items: flex-start;
 }

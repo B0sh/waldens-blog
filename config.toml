@@ -8,10 +8,6 @@ generate_feeds = true
 feed_filenames = ["atom.xml","rss.xml","articles.xml"]
 
 [markdown]
-
-highlight_code = true
-highlight_theme = "gruvbox-light"
-
 [extra]
 
 header_links = [
