@@ -18,4 +18,4 @@ link = "https://web.dev/baseline"
 
 Baseline status is built into Chrome Dev Tools as well. Hovering over a CSS selector shows this popup:
 
-![Baseline popover in chrome dev tools](baseline-popup.png)
+![Baseline popover in chrome dev tools](https://static.waldenperry.com/2026/baseline-popup.png)

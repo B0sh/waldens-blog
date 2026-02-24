@@ -6,11 +6,11 @@ date = 2026-02-02
 link = "https://forums.ankiweb.net/t/ankis-growing-up/68610"
 +++
 
-Huge [announcement](https://forums.ankiweb.net/t/ankis-growing-up/68610) for my single favorite piece of open source software [Anki](https://github.com/ankitects/anki). It's the flash card app that I used [extensively](anki-cards.png) while learning Japanese. The original developer, Damien, is changing the business model and partnering with [AnkiHub](https://ankihub.net/) which sells 3rd party Anki plugins and flash cards.
+Huge [announcement](https://forums.ankiweb.net/t/ankis-growing-up/68610) for my single favorite piece of open source software [Anki](https://github.com/ankitects/anki). It's the flash card app that I used [extensively](https://static.waldenperry.com/2026/anki-cards.png) while learning Japanese. The original developer, Damien, is changing the business model and partnering with [AnkiHub](https://ankihub.net/) which sells 3rd party Anki plugins and flash cards.
 
 Right now the only monitization of the entire Anki project is the iOS app priced at $25, Apple taking $7. I was suprised to see that Anki is #3 currently on the entire iPhone for Paid Apps. It's easy to make fun of the state of mobile paid apps, but certaintly it's remarkably successful there. The website and Qt python cross platform desktop app are free. Not to mention server costs, free flash card hosting for any users (with images my database is over 5 gigs), etc. According to the post, it sounds like the biggest driver for this is to de-esclate the pressure of running everything from Damien (otsukare!), and expanding contributions to Anki. They also specifically called out UI improvements as a goal with more resources.
 
-[![Anki's Browse Tab](anki-browse-tab.png)](anki-browse-tab.png)
+[![Anki's Browse Tab](https://static.waldenperry.com/2026/anki-browse-tab.png)](https://static.waldenperry.com/2026/anki-browse-tab.png)
 
 *Anki's Browse Tab, showing my Japanese flashcards.*
 

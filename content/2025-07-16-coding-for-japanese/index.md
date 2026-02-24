@@ -32,7 +32,7 @@ This is by far the most successful script I built, as I've actually used it thou
 
 Still though, while nice it's not required to learn Japanese in any way. All it accomplishes is making me a bit faster at making flash cards with pictures compared to manual `Cmd+Shift+4` screenshots.
 
-![7,093 flash cards selected](screenshot-count.png)
+![7,093 flash cards selected](https://static.waldenperry.com/2025/screenshot-count.png)
 *I do have 7,093 flash cards with YouTube screenshots with this extension.*
 
 ### Minecraft Flash Card Deck ([Github](https://gist.github.com/B0sh/cf2fa108e7b6fbe210bd19dc724f8deb))
@@ -43,11 +43,11 @@ Creating the deck worked, of course. But as for the theme of this post, this onc
 
 I got a big lesson from here about how important it is to study things just outside the range of your comprehension. For me, the entirety of this deck was words that I had already learned or were too difficult.
 
-![flash card for the Waxed Cut Copper block from Minecraft](minecraft.png)
+![flash card for the Waxed Cut Copper block from Minecraft](https://static.waldenperry.com/2025/minecraft.png)
 
 ### AI Conversation Partner ([Github](https://github.com/B0sh/language-trainer/tree/svelte-eel))
 
-{{ video(src="japanese-ai-convo-demo.mp4") }}
+{{ video(src="https://static.waldenperry.com/2025/japanese-ai-convo-demo.mp4") }}
 
 I wanted to practice speaking but frankly at this time I was too scared to go online and try to make conversations with real Japanese people for practice, so I decided to build an *AI conversation partner*. Stop me if you've heard this one before. (side note: I did end up making real Japanese friends)
 
@@ -57,7 +57,7 @@ Latency and transcription accuracy are big killers here. Perhaps it's worse for 
 
 ### AI Language Trainer ([Github](https://github.com/B0sh/language-trainer))
 
-{{ video(src="language-trainer-demo.mp4") }}
+{{ video(src="https://static.waldenperry.com/2025/language-trainer-demo.mp4") }}
 
 Six months later I started over again on the conversation partner prototype and this time went for a "language trainer".
 

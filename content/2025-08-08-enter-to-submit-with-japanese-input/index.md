@@ -6,7 +6,7 @@ date = 2025-08-08
 
 A common UI pattern these days is to have an "Enter to Submit" text box. Good implementations might even give you `Shift + Enter` to add a new line if you want to. There's an issue, though, that often gets overlooked for Japanese and many other languages that use an IME (Input Method Editor) to assist in typing languages with complex character sets.
 
-![Example of Japanese IME input](japanese-ime-example.png)
+![Example of Japanese IME input](https://static.waldenperry.com/2025/japanese-ime-example.png)
 
 *Example of Japanese IME input*
 

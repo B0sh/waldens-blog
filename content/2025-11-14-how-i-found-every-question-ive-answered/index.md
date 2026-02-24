@@ -5,7 +5,7 @@ date = 2025-11-14
 
 My latest Walden's World project is the [Ask A Question](https://waldens.world/questions) page.
 
-[![Walden's World Questions page](questions-page.png)](questions-page.png)
+[![Walden's World Questions page](https://static.waldenperry.com/2025/questions-page.png)](https://static.waldenperry.com/2025/questions-page.png)
 
 I wanted to make the questions page for a while, but it always felt a little sad that I'd be launching it with nothing there. I suddenly wanted to make the page though when I had an idea to go through my public chat history and pull in questions from my past.
 
@@ -106,7 +106,7 @@ This text output was so much clearer than the JSON which was not in thread order
 
 For the first two sources I still had to go through the LLM question results. So the final piece to this project is an html/javascript viewer for the LLM json output with a "SQL copy" button so I could add it into my questions database.
 
-[![Question reviewer interface](question-reviewer.png)](question-reviewer.png)
+[![Question reviewer interface](https://static.waldenperry.com/2025/question-reviewer.png)](https://static.waldenperry.com/2025/question-reviewer.png)
 
 Here was the prompt I used:
 

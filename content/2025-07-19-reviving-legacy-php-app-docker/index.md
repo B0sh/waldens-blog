@@ -5,7 +5,7 @@ date = 2025-07-19
 
 While cleaning out the hard drives I stumbled upon a zip archive of my first major project, Nebula Wars. It's a PHP/MySQL web game from late 2010.
 
-![Screenshot of Nebula Wars from January 5th, 2011](Nebula_Wars_1-5-11.png)
+![Screenshot of Nebula Wars from January 5th, 2011](https://static.waldenperry.com/2025/Nebula_Wars_1-5-11.png)
 
 The story behind this game is kinda wild. I got the source code to a Pokémon RPG, and without knowing much at all about programming set out to convert it into a Space-themed RPG when I was 13 years old. I didn't know JavaScript yet, so the actual gameplay can be boiled down to clicking around on this website. It's certainly of its era.
 

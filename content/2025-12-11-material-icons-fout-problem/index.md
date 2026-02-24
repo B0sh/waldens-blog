@@ -3,7 +3,7 @@ title = "Material Icon's FOUT Problem"
 date = 2025-12-11
 +++
 
-![](material-icon-flash.jpg)
+![](https://static.waldenperry.com/2025/material-icon-flash.jpg)
 
 *This doesn't look right...*
 
