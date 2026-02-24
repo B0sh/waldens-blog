@@ -9,7 +9,7 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -30,18 +30,16 @@ jobs:
         DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
         DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
       run: |
-        sudo apt-get update && sudo apt-get install -y rsync
-        
         mkdir -p ~/.ssh
         echo "$DEPLOY_KEY" > ~/.ssh/deploy_key
         chmod 600 ~/.ssh/deploy_key
-        
+
         ssh-keyscan -H "$DEPLOY_HOST" >> ~/.ssh/known_hosts
-        
+
         # Deploy files using rsync, deleting unused files on the server
         rsync -avz --delete \
           -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no" \
           public/ \
           "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH"
-        
+
         rm -rf ~/.ssh
