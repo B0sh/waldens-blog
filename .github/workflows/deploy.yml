@@ -30,6 +30,7 @@ jobs:
         DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
         DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
       run: |
+        set -x  # Enable command tracing
         mkdir -p ~/.ssh
         echo "$DEPLOY_KEY" > ~/.ssh/deploy_key
         chmod 600 ~/.ssh/deploy_key
