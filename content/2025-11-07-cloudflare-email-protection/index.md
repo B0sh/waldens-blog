@@ -4,6 +4,9 @@ date = 2025-11-07
 
 [extra]
 link = "https://developers.cloudflare.com/waf/tools/scrape-shield/email-address-obfuscation/"
+
+[taxonomies]
+tags = ["til", "web-dev"]
 +++
 
 I've been doing a bit of web scraping lately and ran across `[email protected]` in the HTML of the site I was downloading. Not that I had any use for their email, but I was curious what was doing the "protecting" so I dug into it. It turns out it's a [program by Cloudflare](https://developers.cloudflare.com/waf/tools/scrape-shield/email-address-obfuscation/) to combat scrapers. If Cloudflare thinks a request is a scraping, it looks for email like strings in the response and "protects" the email by removing it from being directly in the response. I checked my domain that I have on Cloudflare and it was on for me, so I guess its a default setting. 

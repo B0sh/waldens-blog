@@ -1,6 +1,9 @@
 +++
 title = "My Dream AI Browser Extension"
 date = 2025-10-18
+
+[taxonomies]
+tags = ["ai"]
 +++
 
 My dream AI browser extension is a decontenting of advertising and marketing psychology tricks.

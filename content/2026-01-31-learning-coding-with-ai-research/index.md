@@ -4,6 +4,9 @@ date = 2026-01-31
 
 [extra]
 link = "https://www.anthropic.com/research/AI-assistance-coding-skills"
+
+[taxonomies]
+tags = ["ai"]
 +++
 
 This [research](https://www.anthropic.com/research/AI-assistance-coding-skills) came out right as I’ve been thinking about how to improve my engineering skills. Pre-LLM I’ve relied primarly on [personal projects](https://waldens.world/projects) to randomly give me usefull skills as I work through making my projects a reality. It's been quite successfull.

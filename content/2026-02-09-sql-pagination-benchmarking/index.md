@@ -4,8 +4,10 @@ date = 2026-02-09
 
 [extra]
 link = "https://github.com/B0sh/investigations/tree/main/sql-pagination"
-+++
 
+[taxonomies]
+tags = ["sql"]
++++
 I'm trying to be better about practicing strong software engineering fundamentals. One such fundamental is benchmarking. Something I know I could do, but instead I often end up designing reactively, where I guess what the best approach is and revisit it if I have problems. I was faced recently at work with a common pagination problem, and I went along and used my typical `OFFSET` approach just to move on to the next ticket. But! I kept thinking about pagination.
 
 You see, I've recently had to learn about DynamoDB for my current project at work (which I intend to write a post about soon), and it's requirement cursor based model for pagination. I was interested in if that method could apply to MySQL too, and it turns out it does! It turns out that `OFFSET` can perform very poorly on large offsets, since it will have to scan through all records up to the offset to find where the results start. I could go into more detail but honestly you're better off reading [this great explanation](https://mysql.rjweb.org/doc.php/pagination) from Rick James that I referenced.

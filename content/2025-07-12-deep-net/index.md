@@ -7,6 +7,9 @@ I want to recommend the [Deep .NET series of videos](https://www.youtube.com/pla
 
 [extra]
 link = "https://www.youtube.com/playlist?list=PLdo4fOcmZ0oX8eqDkSw4hH9cSehrGgdr1"
+
+[taxonomies]
+tags = ["dotnet"]
 +++
 
 I want to recommend the [Deep .NET series of videos](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oX8eqDkSw4hH9cSehrGgdr1) with Stephen Toub and Scott Hanselman. As of July 2025 there’s 11 videos, and I’ve now watched them all. The series is about exploring deep into .NET and C# concepts, down to the implementations of core language features like async/await and LINQ. Stephen Toub is a developer working on .NET itself, so he’s got a special perspective on the language having worked on the implementation that not many people have.

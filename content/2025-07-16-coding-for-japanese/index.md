@@ -1,8 +1,10 @@
 +++
 title = "Did coding help me learn Japanese?"
 date = 2025-07-16
-+++
 
+[taxonomies]
+tags = ["highlights", "japanese"]
++++
 I've been learning [Japanese](https://www.youtube.com/watch?v=0L-TcW2SuLQ) since 2020. 
 
 As a programmer, it's difficult to resist the urge to try to use computers to solve my problems. And so I made many attempts to make my life learning a second language easier with programming. I had a lot of fun with these projects, but did they actually help?

@@ -3,8 +3,10 @@ title = "Benji Smith: Marcus Marcus Marcus"
 date = 2026-03-02
 [extra]
 link = "https://machinecreativity.substack.com/p/marcus-marcus-marcus-ai-randomness"
-+++
 
+[taxonomies]
+tags = ["ai"]
++++
 Super interesting article about randomness with LLMs about picking names, humorously titled [Marcus, Marcus, Marcus](https://machinecreativity.substack.com/p/marcus-marcus-marcus-ai-randomness). As you can imagine they found that LLMs were disproportionally picking Marcus as a "random" name (perhaps *the* random name). 23.6% of responses were Marcus to be exact. The whole article was interesting, but the experimenting of trying improve the "randomness" of the name generation was of note to me:
 
 > Can you make a language model more random by injecting randomness into its input?

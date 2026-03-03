@@ -1,6 +1,9 @@
 +++
 title = "My Experience with Upgrading Ubuntu with do-release-upgrade"
 date = 2025-09-14
+
+[taxonomies]
+tags = ["linux"]
 +++
 
 I just went through the process of upgrading one of my web servers to Ubuntu 24 with the [`do-release-upgrade`](https://manpages.ubuntu.com/manpages/jammy/man8/do-release-upgrade.8.html) Ubuntu installer script, which I've never used before. Every time in the past I went to upgrade one of my servers, I deleted it and recreated from scratch. (yes, I take a backup too)

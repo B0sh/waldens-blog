@@ -26,6 +26,14 @@
     <time datetime="{{ page.date | date(format="%+") }}">{{ page.date | date(format="%B %d, %Y") }}</time>
   {% endif %}
 
+  {% if page.taxonomies.tags %}
+    <span class="post-tags">
+      {% for tag in page.taxonomies.tags %}
+        <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}" class="tag">{{ tag }}</a>
+      {% endfor %}
+    </span>
+  {% endif %}
+
   {{ page.content | safe }}
 </article>
 {% endblock content %}

@@ -4,8 +4,10 @@ date = 2026-02-08
 
 [extra]
 link = "https://web.dev/baseline"
-+++
 
+[taxonomies]
+tags = ["til", "web-dev"]
++++
 > Baseline gives you clear information about which web platform features are ready to use in your projects today. When reading an article, or choosing a library for your project, if the features used are all part of Baseline, you can trust the level of browser compatibility.
 > 
 > Baseline has two stages:

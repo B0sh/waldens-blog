@@ -1,6 +1,9 @@
 +++
 title = "The Problem with 'Enter to Submit' and Japanese Input"
 date = 2025-08-08
+
+[taxonomies]
+tags = ["highlights", "japanese", "web-dev"]
 +++
 
 

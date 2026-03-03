@@ -1,8 +1,10 @@
 +++
 title = "Fixing Animation Glitching with a CSS Hover"
 date = 2026-02-23
-+++
 
+[taxonomies]
+tags = ["highlights", "waldens-world", "web-dev"]
++++
 Animation issues are quite tricky to give a name to...
 
 Just take a look at this video of my [website](https://waldens.world/):

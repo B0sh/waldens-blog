@@ -1,6 +1,9 @@
 +++
 title = "How I Found All The Questions I've Ever Answered With LLMs"
 date = 2025-11-14
+
+[taxonomies]
+tags = ["ai", "highlights", "waldens-world"]
 +++
 
 My latest Walden's World project is the [Ask A Question](https://waldens.world/questions) page.

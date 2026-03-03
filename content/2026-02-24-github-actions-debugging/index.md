@@ -1,8 +1,10 @@
 +++
 title = "Debugging Github Actions"
 date = 2026-02-24
-+++
 
+[taxonomies]
+tags = ["github-actions", "web-dev"]
++++
 My Github action to deploy this blog decided to fail one day with:
 
 ```bash

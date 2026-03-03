@@ -1,6 +1,9 @@
 +++
 title = "How I revived my 15 year old PHP 5.x game with Docker"
 date = 2025-07-19
+
+[taxonomies]
+tags = ["docker", "highlights"]
 +++
 
 While cleaning out the hard drives I stumbled upon a zip archive of my first major project, Nebula Wars. It's a PHP/MySQL web game from late 2010.

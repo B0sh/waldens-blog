@@ -4,6 +4,9 @@ date = 2025-08-01
 
 [extra]
 link = "https://blogs.vmware.com/cloud-foundation/2024/11/11/vmware-fusion-and-workstation-are-now-free-for-all-users/"
+
+[taxonomies]
+tags = ["tools"]
 +++
 
 Faced with another yearly $99 renewal for [Parallels](https://www.parallels.com/), I wanted to take a look around and see if there are any other options for Windows virtualization on Macs. Parallels is an amazing piece of software, and the [Coherence mode](https://kb.parallels.com/4670) feature is incredible.

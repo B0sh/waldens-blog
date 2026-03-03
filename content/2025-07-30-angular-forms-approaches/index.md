@@ -1,6 +1,9 @@
 +++
 title = "What's the difference between FormsModule and ReactiveFormsModule in Angular?"
 date = 2025-07-30
+
+[taxonomies]
+tags = ["angular", "web-dev"]
 +++
 
 

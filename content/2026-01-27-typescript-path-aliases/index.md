@@ -4,8 +4,10 @@ date = 2026-01-27
 
 [extra]
 link = "https://www.typescriptlang.org/tsconfig/#paths"
-+++
 
+[taxonomies]
+tags = ["til"]
++++
 I was investigating an [auth library](https://www.better-auth.com/docs/integrations/next) today when I stumbled upon this syntax:
 
 ```javascript

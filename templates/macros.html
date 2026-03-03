@@ -2,6 +2,13 @@
 <li>
   <a href="{{ post.permalink | safe }}">{{ post.title }}</a>
   <time style="font-size:90%;" datetime="{{ post.date | date(format="%+") }}">{{ post.date | date(format="%B %d, %Y") }}</time>
+  {% if post.taxonomies.tags %}
+    <span class="post-tags">
+      {% for tag in post.taxonomies.tags %}
+        <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}" class="tag">{{ tag }}</a>
+      {% endfor %}
+    </span>
+  {% endif %}
 </li>
 {% endmacro post_in_list %}
 
@@ -16,6 +23,14 @@
 
   {% if post.date %}
     <time datetime="{{ post.date | date(format="%+") }}">{{ post.date | date(format="%B %d, %Y") }}</time>
+  {% endif %}
+
+  {% if post.taxonomies.tags %}
+    <span class="post-tags">
+      {% for tag in post.taxonomies.tags %}
+        <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}" class="tag">{{ tag }}</a>
+      {% endfor %}
+    </span>
   {% endif %}
 
   {% if post.extra.summary %}

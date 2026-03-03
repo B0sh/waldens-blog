@@ -1,6 +1,9 @@
 +++
 title = "This Web Dev Guy Vibes With SwiftUI"
 date = 2025-10-28
+
+[taxonomies]
+tags = ["ai"]
 +++
 
 As a web guy, [my attempts](https://github.com/B0sh/language-trainer) to make apps have always been confined to Electron. I always looked up to native apps very highly, but had never given it a true shot. So I when had an idea for an personal audio player app thing, I decided to ditch what I know and give SwiftUI a shot. Just to be sure we're all clear: I don't know how to do this. I make websites. However, in 2025, surely coding agents have 10x productivity right? With my Github Copilot subscription I can run Claude 4 or GPT-5-Codex agents, so I've got the top of the line LLM access. Easy.

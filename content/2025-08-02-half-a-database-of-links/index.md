@@ -4,6 +4,9 @@ date = 2025-08-02
 
 [extra]
 link = "https://blog.google/technology/developers/googl-link-shortening-update/"
+
+[taxonomies]
+tags = ["web-dev"]
 +++
 
 Google changes it's mind on the shutdown of the Google URL Shorterner service:

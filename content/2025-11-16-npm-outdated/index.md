@@ -4,8 +4,10 @@ date = 2025-11-16
 
 [extra]
 link = "https://docs.npmjs.com/cli/v8/commands/npm-outdated"
-+++
 
+[taxonomies]
+tags = ["til", "web-dev"]
++++
 Today I stumbled across [`npm outdated`](https://docs.npmjs.com/cli/v8/commands/npm-outdated).
 
 > This command will check the registry to see if any (or, specific) installed packages are currently outdated.

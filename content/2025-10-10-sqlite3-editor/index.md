@@ -4,6 +4,9 @@ date = 2025-10-10
 
 [extra]
 link = "https://marketplace.visualstudio.com/items?itemName=yy0931.vscode-sqlite3-editor"
+
+[taxonomies]
+tags = ["vscode"]
 +++
 
 I'm using SQLite in my latest project for the first time, and I wanted to give some praise to the VSCode extension [SQLite3 Editor](https://marketplace.visualstudio.com/items?itemName=yy0931.vscode-sqlite3-editor).

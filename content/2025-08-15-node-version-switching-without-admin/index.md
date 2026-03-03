@@ -1,6 +1,9 @@
 +++
 title = "Switching Node Versions without Admin Privileges"
 date = 2025-08-15
+
+[taxonomies]
+tags = ["node", "web-dev"]
 +++
 
 I've been using [NVM Windows](https://github.com/coreybutler/nvm-windows) for a long time to easily switch Node versions for working with different apps. With NVM Windows it requires admin access to adjust the Windows environment for Node. However, my new corporate laptop policies got stricter with admin rights, and so I'm not able to just quickly elevate to admin to switch my node version anymore.

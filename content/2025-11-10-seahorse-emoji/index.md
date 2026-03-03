@@ -4,6 +4,9 @@ date = 2025-11-10
 
 [extra]
 link = "https://vgel.me/posts/seahorse/"
+
+[taxonomies]
+tags = ["ai"]
 +++
 
 [Interesting article](https://vgel.me/posts/seahorse/) on why LLMs think that there's a seahorse emoji. 

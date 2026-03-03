@@ -1,6 +1,9 @@
 +++
 title = "Debugging Docker Compose Environment Variables"
 date = 2025-09-09
+
+[taxonomies]
+tags = ["docker"]
 +++
 
 I was having issues with my Docker compose project not picking up environment variables, with the following error: 

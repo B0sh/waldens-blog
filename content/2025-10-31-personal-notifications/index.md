@@ -1,6 +1,9 @@
 +++
 title = "Setting Up Personal Notifications With Pushover"
 date = 2025-10-31
+
+[taxonomies]
+tags = ["waldens-world"]
 +++
 
 I've had a pretty good personal notification system going on for like eight years now with SendGrid. I have a gmail alt account that is only for these notification emails, and I use the Sendgrid free API plan to send me notifications from my [websites](https://waldens.world). Or well, I should say *used to*, because this month I discovered that [my free plan was taken from me](https://www.twilio.com/en-us/changelog/sendgrid-free-plan). How rude. I've been a (non-paying) customer for 8 years! Well no matter what, I had to find a new solution, and preferably one that didn't involve email.
