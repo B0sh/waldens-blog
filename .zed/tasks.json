@@ -4,9 +4,8 @@
 [
   {
     "label": "Zola Serve",
-    // doesn't work bc zola serve is front grounded
-    // ; open http://127.0.0.1:1111
-    "command": "zola serve",
+    // Start the server, open the site once it's up, then keep streaming logs.
+    "command": "zola serve & pid=$!; sleep 0.1; open http://127.0.0.1:1111; wait $pid",
     "use_new_terminal": false,
     "allow_concurrent_runs": false,
     // What to do with the terminal pane and tab, after the command was started:
