@@ -18,7 +18,7 @@ You can go all the way down to 2 bits, which removes the sign bit and leaves jus
 
 It's amazing that with just these values you can do anything useful.
 
-The smallest possible 1 bit float might actually be useless though:
+The smallest possible float at 1 bit might actually be useless though:
 
 > Removing the mantissa would allow only two values: 0 and Inf. Removing the exponent does not work, the above formulae produce 0 and sqrt(2)/2. The exponent must be at least 1 bit or else it no longer makes sense as a float (it would just be a signed number).
 
