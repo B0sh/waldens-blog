@@ -14,7 +14,7 @@ There are [docs](https://github.com/docker-library/docs/blob/master/postgres/REA
 
 Just for posterity here's what I ended up with:
 
-```yaml dockerfile
+```yaml
 services:
   db:
     image: postgres:18.1-alpine3.23

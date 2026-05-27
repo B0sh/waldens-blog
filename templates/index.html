@@ -65,12 +65,10 @@
           </div>
         </div>
       </header>
-      <hr />
       {% endblock header %}
 
       {% block content %}
       <section class="recent-posts">
-        <!-- <h3>Recent</h3> -->
         {% if paginator %}
           {% for post in paginator.pages %}
             {{ macros::recent_post_full(post=post) }}

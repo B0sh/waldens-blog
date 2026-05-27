@@ -12,6 +12,9 @@ taxonomies = [
 ]
 
 [markdown]
+[markdown.highlighting]
+theme = "github-light"
+
 [extra]
 
 header_links = [

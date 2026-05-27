@@ -1,6 +1,6 @@
 html,
 body {
-  background: #fbfbfb;
+  background: var(--background-color);
   color: #222;
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", system-ui, Helvetica, sans-serif;
   scrollbar-gutter: stable both-edges;
@@ -8,19 +8,14 @@ body {
   font-size: 15px;
 }
 :root {
+  --background-color: #fbfbfb;
   --accent-color: #086aee;
   --text-muted: rgba(0, 0, 0, 0.55);
   --border-color: rgba(0, 0, 0, 0.12);
   --code-bg: #f2f2f2;
   --blockquote-border: rgba(0, 0, 0, 0.18);
 }
-code {
-  font-family: "SF Mono", Menlo, Courier, monospace;
-  font-size: 1rem;
-  background: var(--code-bg);
-  padding: 1px 2px;
-  border-radius: 2px;
-}
+
 a,
 a:visited {
   /* text-decoration: none; */
@@ -38,11 +33,7 @@ main {
   padding: 0.8rem;
   padding-top: 2vh;
 }
-pre {
-  background: var(--code-bg);
-  overflow: scroll;
-  padding: 1rem;
-}
+
 
 table {
   border-collapse: collapse;
@@ -215,4 +206,28 @@ header {
 
 .post-tags .tag:hover {
   color: var(--accent-color);
+}
+
+pre {
+  overflow: auto;
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.4rem;
+}
+
+
+/* From: https://www.getzola.org/documentation/content/syntax-highlighting/ */
+.giallo-l {
+    display: inline-block;
+    min-height: 1lh;
+    width: 100%;
+}
+.giallo-ln {
+    display: inline-block;
+    user-select: none;
+    margin-right: 0.4em;
+    padding: 0.4em;
+    min-width: 3ch;
+    text-align: right;
+    opacity: 0.8;
 }
