@@ -1,5 +1,0 @@
-[phases.setup]
-nixPkgs = ["zola"]
-
-[phases.build]
-cmds = ["zola build"]
