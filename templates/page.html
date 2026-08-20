@@ -1,7 +1,7 @@
 {% extends "index.html" %}
 
 {% block title %}{{ page.title }} &middot; {{ config.title }}{% endblock title %}
-{% block description %}{{ page.description | default(value=config.description) }}{% endblock description %}
+{% block description %}{{ page.description or config.description }}{% endblock description %}
 {% block ogtitle %}{{ page.title }}{% endblock ogtitle %}
 {% block ogdesc %}{{ page.description }}{% endblock ogdesc %}
 {% block ogurl %}{{ page.permalink | safe }}{% endblock ogurl%}
@@ -23,13 +23,13 @@
   </h2>
 
   {% if page.date %}
-    <time datetime="{{ page.date | date(format="%+") }}">{{ page.date | date(format="%B %d, %Y") }}</time>
+    <time datetime="{{ page.date | date(format="%Y-%m-%dT%H:%M:%S%:z") }}">{{ page.date | date(format="%B %d, %Y") }}</time>
   {% endif %}
 
   {% if page.taxonomies.tags %}
     <span class="post-tags">
       {% for tag in page.taxonomies.tags %}
-        <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}" class="tag">{{ tag }}</a>
+        <a href="{{ get_taxonomy_url(kind="tags", term=tag) | safe }}" class="tag">{{ tag }}</a>
       {% endfor %}
     </span>
   {% endif %}

@@ -23,6 +23,7 @@ At first I didn't have any leads because the error was so vague. Which command i
 
 For reference here's the relevant action for my deployment. 
 
+{% raw %}
 ```yaml
 - name: Deploy to server
   if: github.ref == 'refs/heads/main' && github.event_name == 'push'
@@ -46,6 +47,7 @@ For reference here's the relevant action for my deployment.
   
     rm -rf ~/.ssh
 ```
+{% endraw %}
 
 I added [`set -x`](https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html) into my `run` block to start of the script to get bash to output a trace of the commands it runs. This let me see the following log:
 

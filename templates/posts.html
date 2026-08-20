@@ -4,7 +4,7 @@
 <ul class="homepage-list">
 {% set blog_section = get_section(path="_index.md") %}
 {% for post in blog_section.pages %}
-    {{ macros::post_in_list(post=post) }}
+    {{<post_in_list post={post} />}}
 {% endfor %}
 </ul>
 {% endblock content %}

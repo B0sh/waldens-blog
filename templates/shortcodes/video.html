@@ -1,8 +1,9 @@
+{% component video(src, autoplay=false, loop=false, class="") %}
 <div {% if class %}class="{{class}}"{% endif %}>
     <!-- Ideally a CDN solution would have preload="none" and a poster="" value to set a thumbnail -->
     <video {% if autoplay %}autoplay{% endif %} {% if loop %}loop{% endif %} controls>
         {%- set type = src | split(pat=".") | last %}
-        {%- if src is starting_with("http://") or src is starting_with("https://") %}
+        {%- if src is starting_with(pat="http://") or src is starting_with(pat="https://") %}
         <source src="{{ src }}" type="{{ 'video/' ~ type }}" />
         {%- else %}
         <source src="{{ get_url(path=src) }}" type="{{ 'video/' ~ type }}" />
@@ -10,3 +11,4 @@
         Your browser doesn't support the video.
     </video>
 </div>
+{% endcomponent video %}

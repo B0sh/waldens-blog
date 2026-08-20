@@ -49,7 +49,7 @@ I got a big lesson from here about how important it is to study things just outs
 
 ### AI Conversation Partner ([Github](https://github.com/B0sh/language-trainer/tree/svelte-eel))
 
-{{ video(src="https://static.waldenperry.com/2025/japanese-ai-convo-demo.mp4") }}
+{{<video src="https://static.waldenperry.com/2025/japanese-ai-convo-demo.mp4" />}}
 
 I wanted to practice speaking but frankly at this time I was too scared to go online and try to make conversations with real Japanese people for practice, so I decided to build an *AI conversation partner*. Stop me if you've heard this one before. (side note: I did end up making real Japanese friends)
 
@@ -59,7 +59,7 @@ Latency and transcription accuracy are big killers here. Perhaps it's worse for 
 
 ### AI Language Trainer ([Github](https://github.com/B0sh/language-trainer))
 
-{{ video(src="https://static.waldenperry.com/2025/language-trainer-demo.mp4") }}
+{{<video src="https://static.waldenperry.com/2025/language-trainer-demo.mp4" />}}
 
 Six months later I started over again on the conversation partner prototype and this time went for a "language trainer".
 

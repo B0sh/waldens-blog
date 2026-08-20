@@ -9,6 +9,7 @@ tags = ["ai"]
 +++
 Super interesting article about randomness with LLMs about picking names, humorously titled [Marcus, Marcus, Marcus](https://machinecreativity.substack.com/p/marcus-marcus-marcus-ai-randomness). As you can imagine they found that LLMs were disproportionally picking Marcus as a "random" name (perhaps *the* random name). 23.6% of responses were Marcus to be exact. The whole article was interesting, but the experimenting of trying improve the "randomness" of the name generation was of note to me:
 
+{% raw %}
 > Can you make a language model more random by injecting randomness into its input?
 > 
 > We tested this by prepending a random “seed” to the user message. We tried several different kinds. First, “noise seeds” — random characters at three different lengths:
@@ -26,6 +27,7 @@ Super interesting article about randomness with LLMs about picking names, humoro
 > > 8 words: RANDOM(loud north great water choice face dead sure)
 
 > Seeds work. Any kind of seed — noise or words — dramatically increases diversity compared to no seed at all. The no-seed condition produced only 288 unique names; the best seed conditions produced nearly 800.
+{% endraw %}
 
 
 In my own work with my [language trainer](https://github.com/B0sh/language-trainer) app, the main concept was to use AI to generate example sentences to practice listening comprehension. I ran into this creative wall quickly where I was getting very similar sentences and I actually implemented a similar approach. 

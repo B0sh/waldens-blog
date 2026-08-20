@@ -23,6 +23,7 @@ It's a reasonable question to ask. The plainly named `FormsModule` gives you tem
 
 Let's look at a basic implementation with one control that displays back to the user what value they typed in to demonstrate the two way binding.
 
+{% raw %}
 ```typescript
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -40,10 +41,12 @@ export class NameTemplate {
   name = '';
 }
 ```
+{% endraw %}
 
 For template-driven forms, the `name` variable is declared as a string, and then `[(ngModel)]` attaches the variable to the text input element. This automatically sets up the two way binding. You could add a button to reset the input with `this.name = '';` and Angular would know to update the form input as well.
 
 
+{% raw %}
 ```typescript
 import { Component } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
@@ -61,6 +64,7 @@ export class NameReactive {
   nameControl = new FormControl('');
 }
 ```
+{% endraw %}
 
 In the reactive version, we initialize a new `FormControl` instance and then pass it into the text input element using a directive, provided by the `ReactiveFormModule`.
 

@@ -1,18 +1,18 @@
-{% macro post_in_list(post) %}
+{% component post_in_list(post) %}
 <li>
   <a href="{{ post.permalink | safe }}">{{ post.title }}</a>
-  <time style="font-size:90%;" datetime="{{ post.date | date(format="%+") }}">{{ post.date | date(format="%B %d, %Y") }}</time>
+  <time style="font-size:90%;" datetime="{{ post.date | date(format="%Y-%m-%dT%H:%M:%S%:z") }}">{{ post.date | date(format="%B %d, %Y") }}</time>
   {% if post.taxonomies.tags %}
     <span class="post-tags">
       {% for tag in post.taxonomies.tags %}
-        <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}" class="tag">{{ tag }}</a>
+        <a href="{{ get_taxonomy_url(kind="tags", term=tag) | safe }}" class="tag">{{ tag }}</a>
       {% endfor %}
     </span>
   {% endif %}
 </li>
-{% endmacro post_in_list %}
+{% endcomponent post_in_list %}
 
-{% macro recent_post_full(post) %}
+{% component recent_post_full(post) %}
 <article>
   <h2>
     <a href="{{ post.permalink | safe }}">{{ post.title }}</a>
@@ -22,13 +22,13 @@
   </h2>
 
   {% if post.date %}
-    <time datetime="{{ post.date | date(format="%+") }}">{{ post.date | date(format="%B %d, %Y") }}</time>
+    <time datetime="{{ post.date | date(format="%Y-%m-%dT%H:%M:%S%:z") }}">{{ post.date | date(format="%B %d, %Y") }}</time>
   {% endif %}
 
   {% if post.taxonomies.tags %}
     <span class="post-tags">
       {% for tag in post.taxonomies.tags %}
-        <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}" class="tag">{{ tag }}</a>
+        <a href="{{ get_taxonomy_url(kind="tags", term=tag) | safe }}" class="tag">{{ tag }}</a>
       {% endfor %}
     </span>
   {% endif %}
@@ -40,5 +40,4 @@
     {{ post.content | safe }}
   {% endif %}
 </article>
-{% endmacro recent_post_full %}
-
+{% endcomponent recent_post_full %}

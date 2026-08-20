@@ -1,5 +1,3 @@
-{% import "macros.html" as macros %}
-
 <!DOCTYPE html>
 <html lang="en">
   {% block head %}
@@ -22,15 +20,15 @@
       <meta property="og:url" content="{% block ogurl %}{{config.base_url | safe }}{% endblock ogurl %}">
       <meta property="og:image" content="{% block ogimage %}{% if config.extra.ogimage %}{{ get_url(path=config.extra.ogimage) | safe }}{% endif %}{% endblock ogimage %}">
 
-      {% if page.date -%}
+      {% if page?.date -%}
         <meta property="og:type" content="article" />
-        <meta property="article:published_time" content="{{ page.date | date(format="%+") }}" />
+        <meta property="article:published_time" content="{{ page.date | date(format="%Y-%m-%dT%H:%M:%S%:z") }}" />
       {%- endif %}
 
-      {% if page.earlier -%}
+      {% if page?.earlier -%}
         <link rel="prev" href="{{ page.earlier.permalink | safe }}" />
       {%- endif %}
-      {% if page.later -%}
+      {% if page?.later -%}
         <link rel="next" href="{{ page.later.permalink | safe }}" />
       {%- endif %}
     {%- endblock seo -%}
@@ -71,11 +69,11 @@
       <section class="recent-posts">
         {% if paginator %}
           {% for post in paginator.pages %}
-            {{ macros::recent_post_full(post=post) }}
+            {{<recent_post_full post={post} />}}
           {% endfor %}
         {% else %}
-          {% for post in section.pages | slice(end=5) %}
-            {{ macros::recent_post_full(post=post) }}
+          {% for post in section.pages[:5] %}
+            {{<recent_post_full post={post} />}}
           {% endfor %}
         {% endif %}
       </section>

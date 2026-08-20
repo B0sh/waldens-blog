@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ lang }}">
     <title>{{ config.title }}
     {%- if term %} - {{ term.name }}
-    {%- elif section.title %} - {{ section.title }}
+    {%- elif section?.title %} - {{ section.title }}
     {%- endif -%}
     </title>
     {%- if config.description %}
@@ -23,7 +23,7 @@
     <entry xml:lang="{{ page.lang }}">
         <title>{{ page.title }}</title>
         <published>{{ page.date | date(format="%F") }}</published>
-        <updated>{{ page.updated | default(value=page.date) | date(format="%F") }}</updated>
+        <updated>{{ (page.updated or page.date) | date(format="%F") }}</updated>
         {% for author in page.authors %}
         <author>
           <name>

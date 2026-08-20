@@ -14,6 +14,6 @@ Learned about the concept of **Speculative Decoding** for optimizing LLM interfe
 
 I found it interesting how similar this is to something like CPU branch prediction.
 
-{{ video(src="https://storage.googleapis.com/gweb-research2023-media/media/SpeculativeDecoding-1-Illustration.mp4") }}
+{{<video src="https://storage.googleapis.com/gweb-research2023-media/media/SpeculativeDecoding-1-Illustration.mp4" />}}
 
 *Source: Google [https://research.google/blog/looking-back-at-speculative-decoding/](https://research.google/blog/looking-back-at-speculative-decoding/)*

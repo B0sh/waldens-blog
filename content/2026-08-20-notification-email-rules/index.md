@@ -1,6 +1,6 @@
 +++
 title = "Can I Have Email Rules For Nofications Please"
-date = 2026-04-12
+date = 2026-08-20
 +++
 
 From time to time I need (or let's be honest, want) to have notifications for only on specific part of an app, but along with that I'm forced to get their marketing notifications too. 
