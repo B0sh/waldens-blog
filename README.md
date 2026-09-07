@@ -4,7 +4,20 @@ A personal blog built with [Zola](https://www.getzola.org/), a fast static site 
 
 ## Development
 
-1. Install Zola: `brew install zola` (macOS)
+1. Install Zola for your operating system:
+
+   **macOS:**
+
+   ```sh
+   brew install zola
+   ```
+
+   **Linux (Arch):**
+
+   ```sh
+   sudo pacman -S zola
+   ```
+
 2. Clone this repository
 3. Run `zola serve` to start the development server
 4. Visit `http://127.0.0.1:1111`
