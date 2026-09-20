@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>{{ config.title }}</title>
+    <link>{{ config.base_url | safe }}</link>
+    <description>{{ config.description }}</description>
+    <generator>Zola</generator>
+    <language>{{ lang }}</language>
+    <atom:link href="{{ feed_url | safe }}" rel="self" type="application/rss+xml"/>
+    {% if last_updated is defined %}<lastBuildDate>{{ last_updated | date(format="%a, %d %b %Y %T %z") }}</lastBuildDate>{% endif %}
+    {%- for page in pages %}
+    <item>
+      <title>{{ page.title }}</title>
+      <pubDate>{{ page.date | date(format="%a, %d %b %Y %T %z") }}</pubDate>
+      {% for author in page.authors %}
+      <author>{{ author }}</author>
+      {% else %}
+      <author>{{ config.author }}</author>
+      {% endfor %}
+      <link>{{ page.permalink | safe }}</link>
+      <guid>{{ page.permalink | safe }}</guid>
+      {% if page.summary %}
+        {% set feed_source = page.summary %}
+      {% else %}
+        {% set feed_source = page.content %}
+      {% endif %}
+      {% set_global feed_body = "" %}
+      {% for chunk in feed_source | split(pat="<!-- slideshow:web:start -->") %}
+        {% if loop.first %}
+          {% set_global feed_body = feed_body ~ chunk %}
+        {% else %}
+          {% set web_parts = chunk | split(pat="<!-- slideshow:web:end -->") %}
+          {% set after_slideshow = web_parts | nth(n=1) %}
+          {% set_global feed_body = feed_body ~ after_slideshow %}
+        {% endif %}
+      {% endfor %}
+      {% set feed_body = feed_body
+        | replace(from="<!-- slideshow:feed:start", to="")
+        | replace(from="slideshow:feed:end -->", to="")
+      %}
+      <description xml:base="{{ page.permalink | escape_xml | safe }}">{{ feed_body }}</description>
+    </item>
+    {%- endfor %}
+  </channel>
+</rss>

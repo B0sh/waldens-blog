@@ -44,9 +44,28 @@
         <link rel="alternate" type="text/html" href="{{ page.permalink | safe }}"/>
         <id>{{ page.permalink | safe }}</id>
         {% if page.summary %}
-        <summary type="html">{{ page.summary }}</summary>
+          {% set feed_source = page.summary %}
         {% else %}
-        <content type="html" xml:base="{{ page.permalink | escape_xml | safe }}">{{ page.content }}</content>
+          {% set feed_source = page.content %}
+        {% endif %}
+        {% set_global feed_body = "" %}
+        {% for chunk in feed_source | split(pat="<!-- slideshow:web:start -->") %}
+          {% if loop.first %}
+            {% set_global feed_body = feed_body ~ chunk %}
+          {% else %}
+            {% set web_parts = chunk | split(pat="<!-- slideshow:web:end -->") %}
+            {% set after_slideshow = web_parts | nth(n=1) %}
+            {% set_global feed_body = feed_body ~ after_slideshow %}
+          {% endif %}
+        {% endfor %}
+        {% set feed_body = feed_body
+          | replace(from="<!-- slideshow:feed:start", to="")
+          | replace(from="slideshow:feed:end -->", to="")
+        %}
+        {% if page.summary %}
+        <summary type="html">{{ feed_body }}</summary>
+        {% else %}
+        <content type="html" xml:base="{{ page.permalink | escape_xml | safe }}">{{ feed_body }}</content>
         {% endif %}
     </entry>
     {%- endfor %}

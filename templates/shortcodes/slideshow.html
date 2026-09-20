@@ -1,0 +1,68 @@
+{% component slideshow(id, images, url_prefix="", label="") -%}
+<!-- slideshow:web:start -->
+<section class="slideshow"{% if label %} aria-label="{{ label }}"{% endif %}>
+    <style>
+        {%- for image in images %}
+        #{{ id }}:has(#{{ id }}-{{ loop.index }}:checked) .slideshow-frame:nth-child({{ loop.index }}) { display: block; }
+        {%- endfor %}
+    </style>
+    <div id="{{ id }}">
+        {%- for image in images %}
+            <input class="slideshow-state" type="radio" name="{{ id }}" id="{{ id }}-{{ loop.index }}" aria-label="Photo {{ loop.index }} of {{ images | length }}"{% if loop.first %} checked{% endif %}>
+        {%- endfor %}
+        <ol class="slideshow-frames">
+            {%- for image in images -%}
+                {%- set source = image | nth(n=0) -%}
+                {%- set alt = image | nth(n=1) -%}
+                {%- if loop.first -%}
+                    {%- set previous = images | length -%}
+                {%- else -%}
+                    {%- set previous = loop.index - 1 -%}
+                {%- endif -%}
+                {%- if loop.last -%}
+                    {%- set next = 1 -%}
+                {%- else -%}
+                    {%- set next = loop.index + 1 -%}
+                {%- endif %}
+                <li class="slideshow-frame">
+                    <figure>
+                        {%- if source is starting_with(pat="http://") or source is starting_with(pat="https://") %}
+                            <a href="{{ source | safe }}">
+                                <img src="{{ source | safe }}" alt="{{ alt }}"{% if not loop.first %} loading="lazy"{% endif %} decoding="async">
+                            </a>
+                        {%- else %}
+                            {%- set filename = source | split(pat="/") | last -%}
+                            {%- set original_path = url_prefix ~ "/" ~ filename -%}
+                            {%- set original = get_url(path=original_path) -%}
+                            {%- set preview = resize_image(path=source, width=1200, op="fit_width", quality=85) -%}
+                            <a href="{{ original | safe }}">
+                                <img src="{{ preview.url | safe }}" alt="{{ alt }}" width="{{ preview.width }}" height="{{ preview.height }}"{% if not loop.first %} loading="lazy"{% endif %} decoding="async">
+                            </a>
+                        {%- endif %}
+                        {%- if images | length > 1 %}
+                            <figcaption class="slideshow-controls">
+                                <label for="{{ id }}-{{ previous }}">&larr; Previous</label>
+                                <span>{{ loop.index }} / {{ images | length }}</span>
+                                <label for="{{ id }}-{{ next }}">Next &rarr;</label>
+                            </figcaption>
+                        {%- endif %}
+                    </figure>
+                </li>
+            {%- endfor %}
+        </ol>
+    </div>
+</section>
+<!-- slideshow:web:end -->
+<!-- slideshow:feed:start
+{%- for image in images -%}
+{%- set source = image | nth(n=0) -%}
+{%- set alt = image | nth(n=1) -%}
+{%- if source is starting_with(pat="http://") or source is starting_with(pat="https://") -%}
+<img src="{{ source | safe }}" alt="{{ alt }}">
+{%- else -%}
+{%- set preview = resize_image(path=source, width=1200, op="fit_width", quality=85) -%}
+<img src="{{ preview.url | safe }}" alt="{{ alt }}" width="{{ preview.width }}" height="{{ preview.height }}">
+{%- endif -%}
+{%- endfor %}
+slideshow:feed:end -->
+{%- endcomponent slideshow %}

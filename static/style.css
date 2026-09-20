@@ -10,6 +10,7 @@ body {
 :root {
   --background-color: #fbfbfb;
   --accent-color: #086aee;
+  --link-hover: #1a4fb8;
   --text-muted: rgba(0, 0, 0, 0.55);
   --border-color: rgba(0, 0, 0, 0.12);
   --code-bg: #f2f2f2;
@@ -22,7 +23,7 @@ a:visited {
   color: var(--accent-color);
 }
 a:hover {
-  color: #1a4fb8;
+  color: var(--link-hover);
 }
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
@@ -231,3 +232,68 @@ pre {
     text-align: right;
     opacity: 0.8;
 }
+
+
+
+/* slideshow */
+.slideshow {
+  margin: 1.5rem 0;
+}
+
+.slideshow-frames {
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow-frame {
+  display: none;
+  list-style: none;
+}
+
+.slideshow-frame figure {
+  margin: 0;
+}
+
+.slideshow-frame img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: var(--code-bg);
+}
+
+.slideshow-controls {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  padding: 0.5rem 0.15rem 0.25rem;
+  color: var(--text-muted);
+}
+
+.slideshow-controls label {
+  color: var(--accent-color);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.slideshow-controls label:hover {
+  color: var(--link-hover);
+}
+
+.slideshow-controls label:last-child {
+  text-align: right;
+}
+
+.slideshow-state {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.slideshow:has(.slideshow-state:focus-visible) .slideshow-frame {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 0.15rem;
+}
+/* slideshow */
