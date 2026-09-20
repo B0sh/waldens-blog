@@ -3,7 +3,7 @@
 <section class="slideshow"{% if label %} aria-label="{{ label }}"{% endif %}>
     <style>
         {%- for image in images %}
-        #{{ id }}:has(#{{ id }}-{{ loop.index }}:checked) .slideshow-frame:nth-child({{ loop.index }}) { display: block; }
+        #{{ id }}-{{ loop.index }}:checked ~ .slideshow-frames .slideshow-frame:nth-child({{ loop.index }}) { display: block; }
         {%- endfor %}
     </style>
     <div id="{{ id }}">
