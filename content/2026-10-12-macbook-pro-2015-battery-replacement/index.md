@@ -11,7 +11,7 @@ pangram = "https://www.pangram.com/history/af3c57fb-0185-4698-865b-b8bb7629553f"
 
 Huge win for my [self-repair](/tags/self-repair) journey. I did my first MacBook battery replacement!
 
-This is for the [early 2015 retina MacBook Pro 13in](https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-i5-2.7-13-early-2015-retina-display-specs.html) model. I'd like to share some pictures and how the job went for me, but if you found this blog hoping for a tutorial on the 2015 MacBook Pro battery replacement guide that's not what this is. You should follow the [iFixit Guide](https://www.ifixit.com/Guide/MacBook+Pro+13-Inch+Retina+Display+Early+2015+Battery+Replacement/45137). I didn't substantially use any other resources.
+This is for the [early 2015 retina MacBook Pro 13in](https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-i5-2.7-13-early-2015-retina-display-specs.html) model. I'd like to share some pictures and how the job went for me, but if you found this blog hoping for a tutorial on the 2015 MacBook Pro battery replacement you're out of luck. You should follow the [iFixit Guide](https://www.ifixit.com/Guide/MacBook+Pro+13-Inch+Retina+Display+Early+2015+Battery+Replacement/45137) like I did. I didn't substantially use any other resources.
 
 This my first attempted "Difficult" rating on iFixit, presumably due to the fact that the entire battery component is glued on and the general delicate nature of Mac internal parts.
 
